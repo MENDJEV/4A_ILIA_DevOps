@@ -1,5 +1,5 @@
 # 4A_ILIA_DevOps
-Ce dépot est destiné au projet dans le cadre du cours de devOps.
+Ce dépot est destiné au projet dans le cadre du cours de devOps de 4A.
 
 **Noms des collaborateurs:**
 
