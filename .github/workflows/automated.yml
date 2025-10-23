@@ -1,0 +1,13 @@
+name: Automated
+
+on:
+  push:
+      branches:
+            -'**'
+jobs:
+  automated-job:
+      runs-on: ubuntu-latest
+      steps:
+       - name: Print message
+         run: echo "New push"
+   
