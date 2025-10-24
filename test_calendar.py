@@ -1,4 +1,4 @@
-from my_calendar import get_events, create_events
+from my_calendar import get_events, create_events, get_list_events
 
 def test_events_are_in_list():
     events = get_events()
@@ -15,3 +15,12 @@ def test_create_events():
     assert isinstance(event[1],int)
     assert isinstance(event[2],str)
 
+def test_get_list_events():
+    list_of_events = get_list_events()
+    assert isinstance(list_of_events, list)
+    for event in list_of_events:
+        assert isinstance(event, tuple)
+        assert len(event) == 3
+        assert isinstance(event[0],str)
+        assert isinstance(event[1],int)
+        assert isinstance(event[2],str)
