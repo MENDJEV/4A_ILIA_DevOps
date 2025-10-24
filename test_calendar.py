@@ -1,4 +1,4 @@
-from my_calendar import get_events, create_events, get_list_events, get_chronologic_events, get_first_event
+from my_calendar import get_events, create_events, get_list_events, get_chronologic_events, get_first_event, events_storage
 from datetime import datetime
 
 
@@ -35,6 +35,7 @@ def test_get_chronologic_event():
         assert chronologic_list_events[1] == event1
 
 def test_get_first_event():
+    events_storage.clear()
     
     event1 = create_events(datetime(2024,1,1,9,0,0),1800,"Event 1")
     event2 = create_events(datetime(2024,1,2,14,0,0),3600, "Event 2")
