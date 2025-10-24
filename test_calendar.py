@@ -1,6 +1,7 @@
 from my_calendar import get_events, create_events, get_list_events, get_chronologic_events
 from datetime import datetime
 
+
 def test_events_are_in_list():
     events = get_events()
     assert isinstance(events, list)
