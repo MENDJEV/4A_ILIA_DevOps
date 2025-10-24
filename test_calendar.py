@@ -23,7 +23,7 @@ def test_get_list_events():
     for event in list_of_events:
         assert isinstance(event, tuple)
         assert len(event) == 3
-        assert isinstance(event[0],str)
+        assert isinstance(event[0],datetime)
         assert isinstance(event[1],int)
         assert isinstance(event[2],str)
 
