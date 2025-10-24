@@ -3,7 +3,9 @@ def get_events():
     return []
 
 def create_events(T,t,n):
-    return (T,t,n)
+    event= (T,t,n)
+    events_storage.append(event)
+    return event
 
 def get_list_events():
     return events_storage
