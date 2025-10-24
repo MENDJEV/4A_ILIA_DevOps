@@ -1,5 +1,14 @@
+events_storage=[]
 def get_events():
     return []
 
 def create_events(T,t,n):
     return (T,t,n)
+
+def get_list_events():
+    return events_storage
+
+def get_chronologic_events():
+        events = get_list_events()
+        sorted_events = sorted(events, key = lambda event: event[0])
+        return sorted_events
